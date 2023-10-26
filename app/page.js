@@ -34,7 +34,7 @@ const page = () => {
             onClick={() => {
               deleteHandler(i)
             }}
-            className='bg-red-400 text-white px-4 py-2 rounded font-bold '>Delete</button>
+            className='bg-red-500 text-white px-4 py-2 rounded font-bold '>Delete</button>
         </li>
       );
     });
