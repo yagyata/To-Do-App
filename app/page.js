@@ -9,7 +9,7 @@ const page = () => {
 
   const submitHandler = (e) => {
     e.preventDefault()
-    setMainTask([...mainTask, { title, desc }]); //mainTaski is a kind of container jisme naya data add on ho raha hai
+    setMainTask([...mainTask, { title, desc }]); //mainTask is a kind of container jisme naya data add on ho raha hai
     settitle("")
     setdesc("")
     console.log(mainTask)
@@ -23,7 +23,7 @@ const page = () => {
   let renderTask = <h2>No Tasks Available</h2>
 
   if (mainTask.length > 0) {
-    renderTask = mainTask.map((t, i) => { //har baar jo object aa raha hai woh t hai // i->index
+    renderTask = mainTask.map((t, i) => { 
       return (
         <li key={i} className='flex items-center justify-between mb-5'>
           <div className=' w-2/3'>
